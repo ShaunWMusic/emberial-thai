@@ -1,11 +1,16 @@
 .app {
     &__top {
       padding: 1rem;
-      border-bottom: 0.1rem solid #bbb;
-      color: #333;
+      background: rgba(40, 87, 96, 1.0);
+      color: white;
+    }
+    &__hero {
+      background: rgba(97, 40, 83, 1.0);
+      min-height: 10rem;
+      height: 10vh;
+      padding: 1rem;
+
+
     }
 
-    &__content {
-      padding: 1rem;
-    }
 }

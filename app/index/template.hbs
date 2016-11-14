@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="app__hero">
+      <h1 class="app__hero--title">Get Food Delivered FAST!</h1>
+    </div>
+  </div>
+
+<div class="container">
+<div class="grid">
+    {{log model }}
+    {{#each model as |project|}}
+    <div class="grid__item" >
+      {{log project }}
+      <div class="card">
+      <h2 class="card__header">{{ project.name }}</h2>
+
+      {{#each project.menuItems as |value|}}
+      {{log value }}
+          <p class="card__content--name">{{ value.name }}</p>
+          <p class="card__content--description">{{ value.description }}</p>
+          <div class="card__content--price">
+            <p>{{ value.price }}</p>
+          </div>
+      {{/each}}
+      <div class="btn">Order</div>
+
+      </div>    </div>
+    {{/each}}
+  </div>
+</div>

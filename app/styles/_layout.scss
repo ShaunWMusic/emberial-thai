@@ -1,5 +1,6 @@
 .grid {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   // Modifier to center items in these grids
   &--centered {
@@ -20,4 +21,9 @@
     }
     }
   }
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
 }

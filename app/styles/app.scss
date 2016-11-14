@@ -3,3 +3,23 @@
 @import 'section';
 @import 'top-nav';
 @import 'card';
+
+.app__hero--title {
+  text-align: center;
+  color: white;
+}
+
+
+
+.card__content{
+  &--name {
+
+  }
+
+  &--price {
+  text-align: right;
+}
+  &--description {
+
+  }
+}
