@@ -1,29 +1,51 @@
-<div class="container">
   <div class="app__hero">
+    <div class="container">
       <h1 class="app__hero--title">Get Food Delivered FAST!</h1>
     </div>
   </div>
 
 <div class="container">
-<div class="grid">
-    {{log model }}
-    {{#each model as |project|}}
-    <div class="grid__item" >
-      {{log project }}
-      <div class="card">
-      <h2 class="card__header">{{ project.name }}</h2>
+<div class="body-content">
+  <div class="grid">
+      {{log model }}
+      {{#each model as |project|}}
+      <div class="grid__item" >
+        {{log project }}
+      <div class="grid__item--max-half">
+        <h3 class="title">Menu</h3>
+          <div class="card">
+        <h2 class="card__header">{{ project.name }}</h2>
 
-      {{#each project.menuItems as |value|}}
-      {{log value }}
-          <p class="card__content--name">{{ value.name }}</p>
-          <p class="card__content--description">{{ value.description }}</p>
-          <div class="card__content--price">
-            <p>{{ value.price }}</p>
+        {{#each project.menuItems as |value|}}
+        {{log value }}
+          <div class="card__content">
+            <p class="card__content--name">{{ value.name }}</p>
+            <p class="card__content--description">{{ value.description }}</p>
+            <div class="card__content--price">
+              <p>{{ value.price }}</p>
+            </div>
+            <span class="btn">Order</span>
           </div>
-      {{/each}}
-      <div class="btn">Order</div>
+        {{/each}}
 
-      </div>    </div>
-    {{/each}}
-  </div>
+        </div>
+      </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="grid">
+      <div class="grid__item">
+        <div class="grid__item--max-half">
+          <h3 class="title">Your Order</h3>
+          <div class="card">
+            <h2 class="card__header">cart</h2>
+            {{#each modal as |cart|}}
+            <p>{{ cart }}</p>
+
+            {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 </div>

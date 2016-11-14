@@ -11,7 +11,11 @@
 
 
 
-.card__content{
+
+.card {
+
+  &__content{
+
   &--name {
 
   }
@@ -20,6 +24,20 @@
   text-align: right;
 }
   &--description {
-
   }
+}
+}
+
+.btn {
+  background: rgba(96, 170, 156, 1.0);
+}
+
+
+.title {
+  border-bottom: 1px solid black;
+}
+
+.body-conent{
+  display: flex;
+  justify-content: center;
 }
