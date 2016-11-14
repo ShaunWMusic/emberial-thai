@@ -1,7 +1,7 @@
 .grid {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+
+
 
 
   // Modifier to center items in these grids
@@ -11,17 +11,12 @@
 
   // Element within grid components
   &__item {
-    flex-basis: calc(100% / 4);
-    flex-grow: 1;
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    margin: 1rem;
     // Modified grid__item that cannot be too wide
-    &--max-half {
-    max-width: 50%;
-
-    // Take up to 100% on mobile
-    @media (max-width: 500px) {
-      max-width: 100%;
-    }
-    }
+  &--menu {
+    flex-grow: 1;
+  }
   }
 }
 

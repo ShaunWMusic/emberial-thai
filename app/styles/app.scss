@@ -9,12 +9,21 @@
   color: white;
 }
 
-
-
+.body-content {
+  padding: 1rem;
+}
 
 .card {
 
   &__content{
+    display: flex;
+    padding: 0.5rem;
+    padding-right: 0;
+    border-bottom: 1px solid black;
+
+  &-text {
+    flex-grow: 1;
+  }
 
   &--name {
 
@@ -35,9 +44,5 @@
 
 .title {
   border-bottom: 1px solid black;
-}
-
-.body-conent{
-  display: flex;
-  justify-content: center;
+  margin: 0.5rem;
 }

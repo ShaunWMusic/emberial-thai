@@ -4,38 +4,33 @@
     </div>
   </div>
 
-<div class="container">
 <div class="body-content">
+<div class="container">
   <div class="grid">
-      {{log model }}
-      {{#each model as |project|}}
-      <div class="grid__item" >
-        {{log project }}
-      <div class="grid__item--max-half">
+
+      <div class="grid__item grid__item--menu" >
+
         <h3 class="title">Menu</h3>
+        {{#each model as |project|}}
           <div class="card">
         <h2 class="card__header">{{ project.name }}</h2>
-
         {{#each project.menuItems as |value|}}
-        {{log value }}
           <div class="card__content">
-            <p class="card__content--name">{{ value.name }}</p>
-            <p class="card__content--description">{{ value.description }}</p>
-            <div class="card__content--price">
-              <p>{{ value.price }}</p>
+            <div class="card__content-text">
+              <p class="card__content--name">{{ value.name }}</p>
+              <p class="card__content--description">{{ value.description }}</p>
             </div>
-            <span class="btn">Order</span>
+              <div class="card__content--price">
+                <p>{{ value.price }}</p>
+              </div>
+              <div class="btn">Order</div>
           </div>
         {{/each}}
-
         </div>
+        {{/each}}
       </div>
-        </div>
-      {{/each}}
-    </div>
-    <div class="grid">
       <div class="grid__item">
-        <div class="grid__item--max-half">
+        <div class="grid__item">
           <h3 class="title">Your Order</h3>
           <div class="card">
             <h2 class="card__header">cart</h2>
@@ -47,5 +42,5 @@
         </div>
       </div>
     </div>
-</div>
-</div>
+  </div>
+  </div>
