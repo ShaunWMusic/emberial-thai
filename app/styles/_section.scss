@@ -1,0 +1,11 @@
+.app {
+    &__top {
+      padding: 1rem;
+      border-bottom: 0.1rem solid #bbb;
+      color: #333;
+    }
+
+    &__content {
+      padding: 1rem;
+    }
+}

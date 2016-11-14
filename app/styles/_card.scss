@@ -1,0 +1,9 @@
+.card {
+  border: 0.1rem solid #bbb;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+
+  &__heading {
+    margin: 1rem 0;
+  }
+}

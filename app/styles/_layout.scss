@@ -1,0 +1,23 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  // Modifier to center items in these grids
+  &--centered {
+  justify-content: center;
+  }
+
+  // Element within grid components
+  &__item {
+    flex-basis: calc(100% / 4);
+    flex-grow: 1;
+    // Modified grid__item that cannot be too wide
+    &--max-half {
+    max-width: 50%;
+
+    // Take up to 100% on mobile
+    @media (max-width: 500px) {
+      max-width: 100%;
+    }
+    }
+  }
+}
