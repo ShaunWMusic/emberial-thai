@@ -14,12 +14,17 @@
 }
 
 .card {
+  margin: 1rem;
 
   &__content{
     display: flex;
-    padding: 0.5rem;
-    padding-right: 0;
+    padding: 0;
     border-bottom: 1px solid black;
+
+    &:last-of-type {
+    border-bottom: 0;
+    }
+
 
   &-text {
     flex-grow: 1;
@@ -31,6 +36,7 @@
 
   &--price {
   text-align: right;
+  padding: 0.5rem;
 }
   &--description {
   }
@@ -39,6 +45,11 @@
 
 .btn {
   background: rgba(96, 170, 156, 1.0);
+  color: white;
+  padding: 0.5rem;
+  outline: none;
+  border: 0;
+
 }
 
 
