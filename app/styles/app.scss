@@ -105,6 +105,13 @@
   padding: 0.5rem;
 }
 
+
+}
+
+.category-items--list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -121,4 +128,20 @@
   a {
     text-decoration: underline;
   }
+}
+
+
+.new-category__btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-new--category__input {
+  input {
+    margin: 0;
+  }
+}
+
+p {
+  margin: 0;
 }
