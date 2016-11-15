@@ -8,7 +8,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('admin', function() {
-    this.route('category', function() {});
+    this.route('category', function() {
+      this.route('new');
+    });
   });
 });
 

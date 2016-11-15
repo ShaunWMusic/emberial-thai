@@ -63,8 +63,6 @@
 .btn {
   background: rgba(96, 170, 156, 1.0);
   color: white;
-  margin: 1rem;
-  margin-top: 1rem;
   padding: 0.5rem;
   outline: none;
   border: 0;
@@ -105,7 +103,14 @@
 &-items {
   background: white;
   padding: 0.5rem;
-  // box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+}
+
+}
+
+.title {
+&-categories {
+  margin-bottom: 1rem;
+  margin: 1rem;
 }
 }
 
