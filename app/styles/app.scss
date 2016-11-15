@@ -16,7 +16,9 @@
 }
 
 .body-content {
-  padding: 1rem;
+  margin: -1rem;
+  height: 100vh;
+  background: rgba(232, 232, 232, 1.0);
 }
 
 .card {
@@ -61,9 +63,18 @@
 .btn {
   background: rgba(96, 170, 156, 1.0);
   color: white;
+  margin: 1rem;
+  margin-top: 1rem;
   padding: 0.5rem;
   outline: none;
   border: 0;
+
+  &-right {
+    display: flex;
+    justify-content: flex-end;
+    background: white;
+    padding: 1rem;
+  }
 
   &-order {
     width: 100%;
@@ -77,5 +88,32 @@
 
 .title {
   border-bottom: 1px solid black;
-  margin: 0.5rem;
+  margin: 1rem;
+
+  &-margin {
+    margin-top: 2rem;
+  }
+}
+
+.section {
+  padding: 1rem;
+}
+
+.category {
+  padding: 0.5rem;
+
+&-items {
+  background: white;
+  padding: 0.5rem;
+  // box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+}
+}
+
+.more-info {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: underline;
+  }
 }
