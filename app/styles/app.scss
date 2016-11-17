@@ -9,55 +9,48 @@
   flex-direction: column;
   justify-content: center;
 
-&--title {
-  text-align: center;
-  color: white;
-}
-}
-
-.body-content {
-  margin: -1rem;
-  height: 100vh;
-  background: rgba(232, 232, 232, 1.0);
+  &--title {
+    text-align: center;
+    color: white;
+  }
 }
 
 .card {
   margin: 1rem;
 
-  &__content{
+  &__content {
     display: flex;
     padding: 0;
     border-bottom: 1px solid rgba(211, 209, 209, 1.0);
 
     &:last-of-type {
-    border-bottom: 0;
+      border-bottom: 0;
     }
 
-  &--total {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    border-top: 1px solid rgba(243, 243, 243, 1.0);
-    border-bottom: 1px solid rgba(243, 243, 243, 1.0);
+    &--total {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-top: 1px solid rgba(243, 243, 243, 1.0);
+      border-bottom: 1px solid rgba(243, 243, 243, 1.0);
+    }
+
+    &-text {
+      flex-grow: 1;
+      padding: 1rem;
+
+    }
+
+    &--name {
+      }
+
+    &--price {
+      text-align: right;
+      padding: 0.5rem;
+    }
+
+    &--description {}
   }
-
-  &-text {
-    flex-grow: 1;
-    padding: 1rem;
-
-  }
-
-  &--name {
-
-  }
-
-  &--price {
-  text-align: right;
-  padding: 0.5rem;
-}
-  &--description {
-  }
-}
 }
 
 .btn {
@@ -83,7 +76,6 @@
   }
 }
 
-
 .title {
   border-bottom: 1px solid black;
   margin: 1rem;
@@ -100,11 +92,10 @@
 .category {
   padding: 0.5rem;
 
-&-items {
-  background: white;
-  padding: 0.5rem;
-}
-
+  &-items {
+    background: white;
+    padding: 0.5rem;
+  }
 
 }
 
@@ -115,10 +106,9 @@
 }
 
 .title {
-&-categories {
-  margin-bottom: 1rem;
-  margin: 1rem;
-}
+  &-categories {
+    margin: 1rem;
+  }
 }
 
 .more-info {
@@ -129,7 +119,6 @@
     text-decoration: underline;
   }
 }
-
 
 .new-category__btn {
   display: flex;
