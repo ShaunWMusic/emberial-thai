@@ -3,10 +3,10 @@
   <div class="btn-right">{{#link-to "admin.category.new" class="btn"}}Add New{{/link-to}}</div>
   <h4 class="category">Name</h4>
   <ul class="category-items">
-  {{#each model as |values|}}
+  {{#each model as |category|}}
       <div class="more-info">
-        <li>{{ values.name }}</li>
-        {{#link-to "admin.category.detail"}}detail{{/link-to}}
+        <li>{{ category.name }}</li>
+        {{#link-to "admin.category.detail" category.id}}detail{{/link-to}}
       </div>
   {{/each}}
   </ul>

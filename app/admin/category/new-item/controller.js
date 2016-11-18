@@ -5,13 +5,13 @@ export default Ember.Controller.extend({
   actions: {
     saveForm(name, goal, description) {
       if (name && goal && description) {
-        const project = this.store.createRecord('project', { name, goal, description });
+        const menu = this.store.createRecord('menu-item', { name, goal, description });
 
-        project.save()
+        menu.save()
           .then(() => {
-            alert('Project saved!');
+            alert('Menu saved!');
 
-            this.transitionToRoute('project.index');
+            this.transitionToRoute('category.index');
           });
       } else {
         alert('You must fill in the form');
