@@ -1,0 +1,26 @@
+.grid {
+  display: flex;
+  margin: -1rem;
+
+
+
+  // Modifier to center items in these grids
+  &--centered {
+  justify-content: center;
+  }
+
+  // Element within grid components
+  &__item {
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    margin: 1rem;
+    // Modified grid__item that cannot be too wide
+  &--menu {
+    flex-grow: 1;
+  }
+  }
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+}

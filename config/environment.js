@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    apiUrl: 'https://limitless-atoll-31882.herokuapp.com/menu-items',
+    DS: {
+      host: 'https://limitless-atoll-31882.herokuapp.com',
+    },
     modulePrefix: 'emberial-thai',
     environment: environment,
     rootURL: '/',

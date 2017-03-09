@@ -1,0 +1,14 @@
+<div class="card card-new--category">
+  <h2 class="card__header card-new--category__header">New Category</h2>
+  {{#simple-form onsubmit=(action "submit") as |inputs|}}
+  <p>
+    <label>Name</label>
+  </p>
+  <p>{{input value=inputs.name}}</p>
+
+<p class="new-category__btn">
+  {{#link-to "admin.category.index" class="btn"}}Back{{/link-to}}
+  <button>Submit</button>
+  </p>
+  {{/simple-form}}
+</div>
